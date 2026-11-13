@@ -4,10 +4,49 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from registre_textil import FONT, carrega_registre
+
 DADES = Path(__file__).parent / "dades"
 
 st.set_page_config(page_title="Texpaper · Compradors potencials", layout="wide")
 st.title("Compradors potencials de Texpaper")
+
+vista = st.radio("Directori", ["Registre tèxtil mundial", "Prospectes qualificats"], horizontal=True)
+if vista == "Registre tèxtil mundial":
+    carrega = st.cache_data(ttl=86400, show_spinner="Carregant el registre mundial…")(carrega_registre)
+    try:
+        registre = carrega()
+    except (OSError, ValueError):
+        st.error("Ara mateix el registre mundial no està disponible. Torna-ho a provar d’aquí a uns minuts.")
+        st.link_button("Obre la font", FONT)
+        st.stop()
+    mètriques = st.columns(2)
+    mètriques[0].metric("Instal·lacions tèxtils", f"{len(registre):,}".replace(",", "."))
+    mètriques[1].metric("Països i territoris", registre["País (registre)"].nunique())
+    st.caption("Còpia de desembre de 2022. Cal comprovar que la planta segueix activa i si compra paper de sublimació.")
+    st.link_button("Font i metodologia del registre", FONT)
+    resum = registre.groupby("País (registre)").size().rename("Instal·lacions").reset_index()
+    mapa = px.choropleth(resum, locations="País (registre)", locationmode="country names",
+                         color="Instal·lacions", hover_name="País (registre)",
+                         projection="natural earth", color_continuous_scale="Teal")
+    mapa.update_geos(showframe=False, showland=True, landcolor="#e7eef2")
+    mapa.update_layout(height=430, margin=dict(l=0, r=0, t=0, b=0))
+    st.plotly_chart(mapa, config={"scrollZoom": True})
+    controls = st.columns(2)
+    països_registre = sorted(registre["País (registre)"].unique())
+    país_registre = controls[0].selectbox("País", ["Tot el món", *països_registre])
+    cerca_registre = controls[1].text_input("Nom de la planta o regió")
+    if país_registre != "Tot el món":
+        registre = registre[registre["País (registre)"].eq(país_registre)]
+    if cerca_registre.strip():
+        text = registre["Instal·lació"] + " " + registre["Regió"]
+        registre = registre[text.str.contains(cerca_registre.strip(), case=False, regex=False)]
+    st.subheader(f"{len(registre):,} resultats".replace(",", "."))
+    registre = registre.sort_values(["País (registre)", "Instal·lació"])
+    st.dataframe(registre, hide_index=True, column_config={"Font": st.column_config.LinkColumn("Fitxa de la planta")})
+    st.download_button("Descarrega la llista filtrada", registre.to_csv(index=False).encode("utf-8-sig"),
+                       "registre_textil.csv", "text/csv")
+    st.stop()
 
 països = pd.read_csv(DADES / "logistica.csv").set_index("iso")["país"]
 empreses = pd.read_csv(DADES / "prospectes.csv").fillna("")

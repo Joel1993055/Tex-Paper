@@ -27,3 +27,7 @@ Obre l’adreça que indica Streamlit.
 La còpia local del LPI funciona sense consultar l’API a cada visita. El fitxer inclou l’URL, el període i la data de consulta. Per actualitzar-lo, executa `python actualitza_dades.py` en un entorn Linux amb les dades del paquet `iso-codes` i accés a l’API del Banc Mundial. Si falla la validació, es conserva el CSV anterior. El LPI 2023 s’identifica com a 2022 a l’API.
 
 Les fonts dels prospectes es recullen a cada fila. Una absència a la base significa que encara no hi ha evidència pública recopilada. La presència comercial actual requereix informació interna.
+
+## Registre tèxtil mundial
+
+La vista **Registre tèxtil mundial** descarrega i filtra la compilació WWF de desembre de 2022, basada en Open Supply Hub per al sector tèxtil, confecció i luxe. Les files representen instal·lacions amb identificador diferent. Una empresa pot operar diverses plantes. Consulta de manera independent l’activitat actual, el procés tècnic i qui compra els consumibles. [Font de les dades](https://zenodo.org/records/7804659)
