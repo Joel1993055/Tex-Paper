@@ -34,8 +34,8 @@ with st.sidebar:
     categoria = st.selectbox("Paper", ["Tots", *sorted(prospectes.categoria.unique())])
     capa = st.radio("Capa del mapa", ["Evidència comercial", "Logística"])
     with st.expander("Prioritats de revisió"):
-        pes_log = st.slider("Logística", 0, 100, 50)
-        pes_proc = st.slider("Procés identificat", 0, 100, 50)
+        pes_log = st.slider("Logística", 0, 100, 30)
+        pes_proc = st.slider("Empreses comparables", 0, 100, 70)
 
 vista = paisos.copy()
 p = prospectes.copy()
@@ -53,6 +53,12 @@ if zona != "Tot el món":
     vista = vista[vista.zona.eq(zona)]
 p = p[p.iso.isin(vista.index)]
 comptes = p[p.estat.eq(VERIFICAT)].groupby("iso").size()
+comparables = pd.read_csv(DADES / "comparables.csv")
+contraparts = pd.read_csv(DADES / "contraparts.csv").fillna("")
+referències = contraparts.loc[contraparts.estat.eq("Enviament documentat"), "empresa"]
+comparables = comparables[comparables["referència"].isin(referències)]
+comptes_icp = p[p.empresa.isin(comparables.empresa)].groupby("iso").empresa.nunique()
+vista["Empreses comparables"] = comptes_icp.reindex(vista.index).astype("Int64")
 vista["Processos documentats"] = comptes.reindex(vista.index).astype("Int64")
 vista["Senyal"] = "Evidència comercial insuficient"
 vista.loc[vista.historial.eq("Sí"), "Senyal"] = "Enviaments històrics"
@@ -66,7 +72,7 @@ with mapa:
     for columna, (etiqueta, valor) in zip(st.columns(4), [
         ("Economies al filtre", len(vista)),
         ("Amb indicador logístic", vista.LPI.count()),
-        ("Prospectes amb procés documentat", comptes.sum()),
+        ("Empreses comparables", comptes_icp.sum()),
         ("Amb historial d’enviaments", vista.historial.eq("Sí").sum()),
     ]):
         columna.metric(etiqueta, valor)
@@ -101,15 +107,15 @@ with mapa:
             st.session_state["mercat"] = "PRT" if "PRT" in codis else codis[0]
         iso = st.selectbox("Mercat seleccionat", codis, format_func=vista.país.get, key="mercat")
         st.subheader("Ordre de revisió dels mercats amb prospectes")
-        revisio = vista.dropna(subset=["Processos documentats", "LPI"]).copy()
+        revisio = vista.dropna(subset=["Empreses comparables", "LPI"]).copy()
         if pes_log + pes_proc and not revisio.empty:
             log = (revisio.LPI - 1) * 25
-            procés = 100 * revisio["Processos documentats"] / revisio["Processos documentats"].max()
+            procés = 100 * revisio["Empreses comparables"] / revisio["Empreses comparables"].max()
             revisio["Índex de revisió"] = (log * pes_log + procés * pes_proc) / (pes_log + pes_proc)
             revisio["Posició només logística"] = log.rank(method="min", ascending=False).astype(int)
             revisio["Posició només prospectes"] = procés.rank(method="min", ascending=False).astype(int)
             st.dataframe(revisio.sort_values("Índex de revisió", ascending=False)[[
-                "país", "LPI", "Processos documentats", "Índex de revisió",
+                "país", "LPI", "Empreses comparables", "Índex de revisió",
                 "Posició només logística", "Posició només prospectes"
             ]].round(1), hide_index=True)
         st.caption("L’ordre orienta la recerca. La cobertura de prospectes varia segons el país. L’atractiu comercial global continua pendent de validació.")
@@ -128,12 +134,25 @@ if not vista.empty:
         st.write("Per cotitzar cal confirmar la referència, l’origen, el codi duaner, el lloc d’entrega, la mida de comanda i la moneda.")
         st.link_button("Consultar Access2Markets", "https://trade.ec.europa.eu/access-to-markets/ca/home")
     with clients:
+        st.subheader("Troba empreses semblants")
+        perfil_icp = st.selectbox("Perfil de referència", ["Tots", *comparables["referència"].unique()])
+        st.caption("Coincidències documentades per procés industrial o funció de distribució. La relació comercial i les compres es validen amb Texpaper.")
         només = st.toggle("Només el mercat seleccionat", value=True)
         filtrats = p[p.iso.eq(iso)] if només else p
+        coincidències = comparables if perfil_icp == "Tots" else comparables[comparables["referència"].eq(perfil_icp)]
+        if perfil_icp != "Tots":
+            filtrats = filtrats[filtrats.empresa.isin(coincidències.empresa)]
+        motius = coincidències.groupby("empresa").motiu.agg(" / ".join)
+        filtrats = filtrats.assign(comparabilitat=filtrats.empresa.map(motius).fillna(""))
         taula = filtrats.assign(país=filtrats.iso.map(paisos.país)).drop(columns="iso")
         st.dataframe(taula, hide_index=True, column_config={"font": st.column_config.LinkColumn("Font")})
         st.download_button("Descarrega el CSV", taula.to_csv(index=False).encode("utf-8-sig"),
                            "prospectes_texpaper.csv", "text/csv")
+        with st.expander("Evidència de les contraparts de referència"):
+            st.dataframe(contraparts, hide_index=True, column_config={
+                "font": st.column_config.LinkColumn("Font de l’enviament"),
+                "font_activitat": st.column_config.LinkColumn("Font de l’activitat"),
+            })
     with cas:
         tria = st.multiselect("Mercats per comparar", codis, default=[iso],
                               max_selections=4, format_func=vista.país.get, key=f"compara_{iso}")
@@ -182,7 +201,7 @@ Cobertura parcial i període complet sense verificar. L’activitat actual reque
 paper de protecció i transferència. [ATS Service](https://www.ats360.co/en) ofereix equips i consumibles.
 
 **Metodologia.** Índex de revisió = mitjana ponderada de `25 × (LPI − 1)` i
-`100 × prospectes documentats / màxim del filtre`. Les posicions extremes mostren la sensibilitat als pesos.
+`100 × empreses comparables / màxim del filtre`. Les posicions extremes mostren la sensibilitat als pesos.
 El recompte mesura la cobertura de la recerca. La demanda efectiva, el risc, la intensitat competitiva
 i la rendibilitat comparable queden pendents de dades. Consulta documental dels prospectes i enviaments el 13/11/2026.
 """)

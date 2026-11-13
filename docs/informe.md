@@ -30,3 +30,11 @@ L’índex logístic del Banc Mundial cobreix 138 de les 217 economies del catà
 ## Criteris per decidir el pilot
 
 Validar amb direcció un llindar de contribució, un termini de cobrament i un pressupost màxim. Mesurar contactes qualificats, mostres provades, incidències, cost per metre útil, comandes de pagament, recompra i marge entregat. Una prova tècnica satisfactòria i una comanda amb contribució positiva justifiquen valorar una segona comanda amb condicions acordades. L’expansió de capacitat o l’exclusivitat comercial requereixen evidència addicional de recurrència.
+
+## Prospectar a partir de compradors documentats
+
+Skytex és el patró industrial més útil de la mostra: Panjiva el vincula a un enviament de juliol de 2022 i la seva web descriu transferència per sublimació i acabats amb calandra. Busquem plantes amb transferència en continu, equip propi i compra recurrent de paper protector. Providencia Prints, FOX Estamparia i Faithful mereixen qualificació tècnica. Per al paper de transferència cal comprovar que la planta imprimeix sobre paper, el tipus de tinta i les especificacions del rotlle. Per a protecció de planxa cal verificar ús de premsa tèrmica i consumibles específics. [Panjiva](https://panjiva.com/Texpaper-Service-S-L/31257177) · [Skytex](https://www.skytexmexico.com/printing/)
+
+The Magic Touch México aporta una referència de canal: l’enviament documentat descriu kraft sense recobriment. L’activitat pública inclou equips i consumibles. Grupo HMM, RLG i ATS Service són comparables per accés tècnic a operadors de calandra. Cal verificar si vendrien paper, qui cobreix l’estoc i en quin territori. [ImportGenius](https://es.importgenius.com/suppliers/texpaper-service-s-l) · [Fitxa de l’empresa](https://www.odoo.com/es/customers/the-magic-touch-mexico-sa-de-cv-1055613)
+
+El rànquing de revisió combina el nombre d’empreses comparables documentades i el LPI, amb pesos editables inicials del 70% i 30%. El recompte depèn de la recerca feta a cada país. Abans de visitar un prospecte, confirmar amb el CRM la relació prèvia i preguntar per màquina, metres útils, format de bobina, consum mensual i responsable de compres.
