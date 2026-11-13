@@ -1,0 +1,218 @@
+iso,país,zona,LPI,període,consulta,font
+ABW,Aruba,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+AFG,Afganistan,Orient Mitjà i Àfrica,1.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+AGO,Angola,Orient Mitjà i Àfrica,2.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ALB,Albània,Europa i Àsia central,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+AND,Andorra,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ARE,Emirats Àrabs Units,Orient Mitjà i Àfrica,4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ARG,Argentina,Amèrica Llatina,2.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ARM,Armènia,Europa i Àsia central,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ASM,Samoa Americana,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ATG,Antigua i Barbuda,Amèrica Llatina,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+AUS,Austràlia,Àsia i Pacífic,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+AUT,Àustria,Europa i Àsia central,4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+AZE,Azerbaidjan,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BDI,Burundi,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BEL,Bèlgica,Europa i Àsia central,4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BEN,Benín,Orient Mitjà i Àfrica,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BFA,Burkina Faso,Orient Mitjà i Àfrica,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BGD,Bangladesh,Àsia i Pacífic,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BGR,Bulgària,Europa i Àsia central,3.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BHR,Bahrain,Orient Mitjà i Àfrica,3.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BHS,Bahames,Amèrica Llatina,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BIH,Bòsnia i Hercegovina,Europa i Àsia central,3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BLR,Belarús,Europa i Àsia central,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BLZ,Belize,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BMU,Bermudes,Amèrica del Nord,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BOL,"Bolívia, Estat Plurinacional de",Amèrica Llatina,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BRA,Brasil,Amèrica Llatina,3.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BRB,Barbados,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BRN,Brunei,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BTN,Bhutan,Àsia i Pacífic,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+BWA,Botswana,Orient Mitjà i Àfrica,3.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CAF,República Centreafricana,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CAN,Canadà,Amèrica del Nord,4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CHE,Suïssa,Europa i Àsia central,4.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CHI,Channel Islands,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CHL,Xile,Amèrica Llatina,3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CHN,Xina,Àsia i Pacífic,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CIV,Costa d'Ivori,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CMR,Camerun,Orient Mitjà i Àfrica,2.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+COD,República Democràtica del Congo,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+COG,Congo,Orient Mitjà i Àfrica,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+COL,Colòmbia,Amèrica Llatina,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+COM,Comores,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CPV,Cap Verd,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CRI,Costa Rica,Amèrica Llatina,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CUB,Cuba,Amèrica Llatina,2.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CUW,Curaçao,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CYM,Illes Caiman,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CYP,Xipre,Europa i Àsia central,3.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+CZE,Txèquia,Europa i Àsia central,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+DEU,Alemanya,Europa i Àsia central,4.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+DJI,Djibouti,Orient Mitjà i Àfrica,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+DMA,Dominica,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+DNK,Dinamarca,Europa i Àsia central,4.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+DOM,República Dominicana,Amèrica Llatina,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+DZA,Algèria,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ECU,Equador,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+EGY,Egipte,Orient Mitjà i Àfrica,3.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ERI,Eritrea,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ESP,Espanya,Europa i Àsia central,3.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+EST,Estònia,Europa i Àsia central,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ETH,Etiòpia,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+FIN,Finlàndia,Europa i Àsia central,4.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+FJI,Fiji,Àsia i Pacífic,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+FRA,França,Europa i Àsia central,3.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+FRO,Illes Fèroe,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+FSM,"Micronèsia, Estats Federats de",Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GAB,Gabon,Orient Mitjà i Àfrica,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GBR,Regne Unit,Europa i Àsia central,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GEO,Geòrgia,Europa i Àsia central,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GHA,Ghana,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GIB,Gibraltar,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GIN,Guinea,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GMB,Gàmbia,Orient Mitjà i Àfrica,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GNB,Guinea Bissau,Orient Mitjà i Àfrica,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GNQ,Guinea Equatorial,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GRC,Grècia,Europa i Àsia central,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GRD,Grenada,Amèrica Llatina,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GRL,Groenlàndia,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GTM,Guatemala,Amèrica Llatina,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GUM,Guam,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+GUY,Guyana,Amèrica Llatina,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+HKG,Hong Kong,Àsia i Pacífic,4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+HND,Hondures,Amèrica Llatina,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+HRV,Croàcia,Europa i Àsia central,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+HTI,Haití,Amèrica Llatina,2.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+HUN,Hongria,Europa i Àsia central,3.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+IDN,Indonèsia,Àsia i Pacífic,3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+IMN,Illa de Man,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+IND,Índia,Àsia i Pacífic,3.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+IRL,Irlanda,Europa i Àsia central,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+IRN,Iran,Orient Mitjà i Àfrica,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+IRQ,Iraq,Orient Mitjà i Àfrica,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ISL,Islàndia,Europa i Àsia central,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ISR,Israel,Orient Mitjà i Àfrica,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ITA,Itàlia,Europa i Àsia central,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+JAM,Jamaica,Amèrica Llatina,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+JOR,Jordània,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+JPN,Japó,Àsia i Pacífic,3.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KAZ,Kazakhstan,Europa i Àsia central,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KEN,Kenya,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KGZ,Kirguizstan,Europa i Àsia central,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KHM,Cambodja,Àsia i Pacífic,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KIR,Kiribati,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KNA,Saint Kitts i Nevis,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KOR,Corea del Sud,Àsia i Pacífic,3.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+KWT,Kuwait,Orient Mitjà i Àfrica,3.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LAO,República Democràtica Popular de Lao,Àsia i Pacífic,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LBN,Líban,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LBR,Libèria,Orient Mitjà i Àfrica,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LBY,Líbia,Orient Mitjà i Àfrica,1.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LCA,Saint Lucia,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LIE,Liechtenstein,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LKA,Sri Lanka,Àsia i Pacífic,2.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LSO,Lesotho,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LTU,Lituània,Europa i Àsia central,3.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LUX,Luxemburg,Europa i Àsia central,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+LVA,Letònia,Europa i Àsia central,3.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MAC,Macau,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MAF,Saint-Martin (part francesa),Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MAR,Marroc,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MCO,Mònaco,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MDA,"Moldàvia, República de",Europa i Àsia central,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MDG,Madagascar,Orient Mitjà i Àfrica,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MDV,Maldives,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MEX,Mèxic,Amèrica Llatina,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MHL,Illes Marshall,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MKD,Macedònia del Nord,Europa i Àsia central,3.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MLI,Mali,Orient Mitjà i Àfrica,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MLT,Malta,Orient Mitjà i Àfrica,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MMR,Myanmar,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MNE,Montenegro,Europa i Àsia central,2.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MNG,Mongòlia,Àsia i Pacífic,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MNP,Illes Mariannes Septentrionals,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MOZ,Moçambic,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MRT,Mauritània,Orient Mitjà i Àfrica,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MUS,Maurici,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MWI,Malawi,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+MYS,Malàisia,Àsia i Pacífic,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NAM,Namíbia,Orient Mitjà i Àfrica,2.9,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NCL,Nova Caledònia,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NER,Níger,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NGA,Nigèria,Orient Mitjà i Àfrica,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NIC,Nicaragua,Amèrica Llatina,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NLD,Països Baixos,Europa i Àsia central,4.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NOR,Noruega,Europa i Àsia central,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NPL,Nepal,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NRU,Nauru,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+NZL,Nova Zelanda,Àsia i Pacífic,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+OMN,Oman,Orient Mitjà i Àfrica,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PAK,Pakistan,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PAN,Panamà,Amèrica Llatina,3.1,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PER,Perú,Amèrica Llatina,3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PHL,Filipines,Àsia i Pacífic,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PLW,Palau,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PNG,Papua Nova Guinea,Àsia i Pacífic,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+POL,Polònia,Europa i Àsia central,3.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PRI,Puerto Rico,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PRK,Corea del Nord,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PRT,Portugal,Europa i Àsia central,3.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PRY,Paraguai,Amèrica Llatina,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PSE,"Palestina, Estat de",Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+PYF,Polinèsia francesa,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+QAT,Qatar,Orient Mitjà i Àfrica,3.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ROU,Romania,Europa i Àsia central,3.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+RUS,Federació Russa,Europa i Àsia central,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+RWA,Ruanda,Orient Mitjà i Àfrica,2.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SAU,Aràbia Saudita,Orient Mitjà i Àfrica,3.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SDN,Sudan,Orient Mitjà i Àfrica,2.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SEN,Senegal,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SGP,Singapur,Àsia i Pacífic,4.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SLB,Illes Salomó,Àsia i Pacífic,2.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SLE,Sierra Leone,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SLV,El Salvador,Amèrica Llatina,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SMR,San Marino,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SOM,Somàlia,Orient Mitjà i Àfrica,2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SRB,Sèrbia,Europa i Àsia central,2.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SSD,Sudan del Sud,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+STP,São Tomé i Príncipe,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SUR,Surinam,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SVK,Eslovàquia,Europa i Àsia central,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SVN,Eslovènia,Europa i Àsia central,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SWE,Suècia,Europa i Àsia central,4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SWZ,Eswatini,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SXM,Sint Maarten (part neerlandesa),Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SYC,Seychelles,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+SYR,República Àrab Síria,Orient Mitjà i Àfrica,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TCA,Illes Turks i Caicos,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TCD,Txad,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TGO,Togo,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+THA,Tailàndia,Àsia i Pacífic,3.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TJK,Tadjikistan,Europa i Àsia central,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TKM,Turkmenistan,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TLS,Timor-Leste,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TON,Tonga,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TTO,Trinidad i Tobago,Amèrica Llatina,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TUN,Tunísia,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TUR,Turquia,Europa i Àsia central,3.4,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TUV,Tuvalu,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+TZA,"Tanzània, República Unida de",Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+UGA,Uganda,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+UKR,Ucraïna,Europa i Àsia central,2.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+URY,Uruguai,Amèrica Llatina,3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+USA,Estats Units,Amèrica del Nord,3.8,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+UZB,Uzbekistan,Europa i Àsia central,2.6,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+VCT,Saint Vincent i les Grenadines,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+VEN,"Veneçuela, República Bolívariana de",Amèrica Llatina,2.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+VGB,Illes Verges Britàniques,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+VIR,Illes Verges dels EUA,Amèrica Llatina,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+VNM,Vietnam,Àsia i Pacífic,3.3,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+VUT,Vanuatu,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+WSM,Samoa,Àsia i Pacífic,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+XKX,Kosovo,Europa i Àsia central,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+YEM,Iemen,Orient Mitjà i Àfrica,2.2,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ZAF,Sud-àfrica,Orient Mitjà i Àfrica,3.7,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ZMB,Zàmbia,Orient Mitjà i Àfrica,,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
+ZWE,Zimbàbue,Orient Mitjà i Àfrica,2.5,2022,2026-11-13,https://api.worldbank.org/v2/country/all/indicator/LP.LPI.OVRL.XQ?date=2022&format=json&per_page=400
