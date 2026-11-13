@@ -11,7 +11,7 @@ DADES = Path(__file__).parent / "dades"
 st.set_page_config(page_title="Texpaper · Compradors potencials", layout="wide")
 st.title("Compradors potencials de Texpaper")
 
-vista = st.radio("Directori", ["Registre tèxtil mundial", "Prospectes qualificats"], horizontal=True)
+vista = st.radio("Directori", ["Prospecció comercial", "Registre tèxtil mundial"], horizontal=True)
 if vista == "Registre tèxtil mundial":
     carrega = st.cache_data(ttl=86400, show_spinner="Carregant el registre mundial…")(carrega_registre)
     try:
@@ -90,6 +90,37 @@ taula = empreses.rename(columns={
 if taula.empty:
     st.info("Encara no hi ha compradors identificats per a aquest país o cerca.")
 else:
+    st.subheader("A qui trucar")
+    taula = taula.sort_values("Validació", ascending=False, kind="stable").reset_index(drop=True)
+    seguiment = st.session_state.setdefault("seguiment_comercial", {})
+    empresa = st.selectbox("Obre una fitxa comercial", taula.Empresa.tolist())
+    fitxa = taula.loc[taula.Empresa.eq(empresa)].iloc[0]
+    producte = fitxa["Producte possible"]
+    if producte == "Protecció de calandra":
+        pregunta = "Quin paper protector utilitzeu a la calandra, de quina amplada i quants rotlles consumiu al mes?"
+        pas = "Si compren paper protector, demana les especificacions actuals i acorda una prova amb producció."
+    elif producte == "Paper de transferència":
+        pregunta = "Imprimiu sobre paper de transferència a la vostra planta? Quin format, gramatge i consum mensual teniu?"
+        pas = "Si fan la impressió internament, demana una mostra del paper actual per preparar una proposta."
+    else:
+        pregunta = "Feu la sublimació internament? Si la subcontracteu, quin taller fa l’estampació i compra el paper?"
+        pas = "Identifica qui compra el paper abans de preparar una oferta."
+    with st.container(border=True):
+        st.markdown(f"**{empresa}** · {fitxa['Ciutat'] or fitxa['País']}")
+        st.write(fitxa["Què fa i què cal confirmar"])
+        st.markdown(f"**Producte a validar** · {producte}")
+        st.markdown(f"**Pregunta per al primer contacte** · {pregunta}")
+        st.markdown(f"**Pas següent** · {pas}")
+        st.link_button("Consulta la font", fitxa["Font"])
+        estats = ["Pendent de contactar", "Ja és client", "Contactat", "Consum confirmat",
+                  "Mostra enviada", "Descartat"]
+        anterior = seguiment.get(empresa, (estats[0], ""))
+        estat = st.selectbox("Estat comercial", estats, index=estats.index(anterior[0]), key=f"estat_{empresa}")
+        notes = st.text_area("Notes de seguiment", value=anterior[1], key=f"notes_{empresa}")
+        seguiment[empresa] = (estat, notes)
+        st.caption("El seguiment dura la sessió. Exporta el CSV per conservar-lo.")
+    taula["Estat comercial"] = taula.Empresa.map(lambda nom: seguiment.get(nom, (estats[0], ""))[0])
+    taula["Notes"] = taula.Empresa.map(lambda nom: seguiment.get(nom, (estats[0], ""))[1])
     st.caption(f"{len(taula)} empreses · {taula['País'].nunique()} països")
     resultat = st.dataframe(
         taula, hide_index=True, on_select="rerun", selection_mode="multi-row",
