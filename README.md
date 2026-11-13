@@ -1,6 +1,6 @@
 # Texpaper · Intel·ligència de mercats
 
-Aplicació en català per investigar l’expansió internacional de Texpaper Service, S.L. Inclou un mapa mundial, fitxes de mercat, prospectes amb fonts, comparació i simulació de marge.
+Directori en català de compradors potencials. Tria un país, consulta el procés públic de cada empresa i exporta les files seleccionades.
 
 ## Arrencada
 
@@ -13,7 +13,7 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Obre l’adreça que indica Streamlit. El selector sota el mapa permet triar qualsevol economia del filtre. La simulació utilitza hipòtesis introduïdes durant la sessió.
+Obre l’adreça que indica Streamlit.
 
 ## Lliurables
 
