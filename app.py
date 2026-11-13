@@ -1,6 +1,7 @@
 from pathlib import Path
 
 import pandas as pd
+import plotly.express as px
 import streamlit as st
 
 DADES = Path(__file__).parent / "dades"
@@ -14,8 +15,27 @@ empreses = empreses[empreses.estat.ne("Canal potencial")].copy()
 empreses["País"] = empreses.iso.map(països)
 empreses["Validació"] = empreses.estat.replace({"Procés verificat": "Procés documentat"})
 
+comptes = empreses.groupby("iso").size()
+dades_mapa = països.rename("País").reset_index()
+dades_mapa["Empreses identificades"] = dades_mapa.iso.map(comptes)
+fig = px.choropleth(
+    dades_mapa, locations="iso", hover_name="País", color="Empreses identificades",
+    color_continuous_scale="Teal", projection="natural earth",
+    hover_data={"iso": False},
+)
+fig.update_geos(showframe=False, showland=True, landcolor="#e4ebee", showcountries=True)
+fig.update_layout(height=470, margin=dict(l=0, r=0, t=0, b=0), dragmode="pan")
+clic = st.plotly_chart(fig, key="mapa_compradors", on_select="rerun",
+                       selection_mode="points", config={"scrollZoom": True})
+punts = clic.selection.points
+codi = punts[-1].get("location") if punts else None
+if codi in països.index and codi != st.session_state.get("últim_clic"):
+    st.session_state["país_compradors"] = països[codi]
+st.session_state["últim_clic"] = codi
+st.caption("Els països en gris encara no tenen compradors identificats a la base.")
+
 controls = st.columns(2)
-país = controls[0].selectbox("País", ["Tot el món", *sorted(països.unique())])
+país = controls[0].selectbox("País", ["Tot el món", *sorted(països.unique())], key="país_compradors")
 cerca = controls[1].text_input("Cerca una empresa")
 if país != "Tot el món":
     empreses = empreses[empreses["País"].eq(país)]
