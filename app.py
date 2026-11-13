@@ -120,6 +120,49 @@ with mapa:
             ]].round(1), hide_index=True)
         st.caption("L’ordre orienta la recerca. La cobertura de prospectes varia segons el país. L’atractiu comercial global continua pendent de validació.")
 
+with clients:
+    st.subheader("Empreses a qui podem vendre")
+    st.caption("Directori mundial de les empreses identificades fins ara. Tria un país o cerca pel nom.")
+    controls = st.columns(3)
+    tipus = controls[0].selectbox("Tipus d’empresa", [
+        "Clients potencials", "Distribuïdors potencials", "Amb enviaments de Texpaper documentats",
+    ])
+    if tipus == "Amb enviaments de Texpaper documentats":
+        directori = contraparts[contraparts.estat.eq("Enviament documentat")].copy()
+        directori["detall"] = directori["rol"] + " · Enviament observat el " + directori["data"]
+        st.caption("Els enviaments documentats són històrics. L’activitat actual es confirma amb el CRM.")
+    else:
+        es_canal = prospectes.estat.eq("Canal potencial")
+        directori = prospectes[es_canal if tipus == "Distribuïdors potencials" else ~es_canal].copy()
+        directori["detall"] = directori["evidencia"]
+    directori["país"] = directori.iso.map(paisos.país)
+    país = controls[1].selectbox("País de l’empresa", ["Tot el món", *sorted(directori.país.dropna().unique())])
+    cerca = controls[2].text_input("Cerca una empresa")
+    if país != "Tot el món":
+        directori = directori[directori.país.eq(país)]
+    if cerca.strip():
+        directori = directori[directori.empresa.str.contains(cerca.strip(), case=False, regex=False)]
+    columnes = ["empresa", "país", "ciutat", "categoria", "detall", "font"]
+    taula = directori.reindex(columns=columnes).fillna("").sort_values(["país", "empresa"])
+    taula = taula.rename(columns={
+        "empresa": "Empresa", "país": "País", "ciutat": "Ciutat", "categoria": "Producte possible",
+        "detall": "Per què ens interessa", "font": "Font",
+    }).reset_index(drop=True)
+    st.write(f"{len(taula)} empreses")
+    if taula.empty:
+        st.info("Cap empresa coincideix amb la cerca.")
+    else:
+        vista_id = (tipus, país, cerca)
+        resultat = st.dataframe(taula, hide_index=True, on_select="rerun", selection_mode="multi-row",
+                                key=f"directori_{vista_id}",
+                                column_config={"Font": st.column_config.LinkColumn("Font")})
+        files = [i for i in resultat.selection.rows if i < len(taula)]
+        exportació = taula.iloc[files] if files else taula
+        st.download_button(
+            "Descarrega les seleccionades" if files else "Descarrega la llista",
+            exportació.to_csv(index=False).encode("utf-8-sig"), "empreses_texpaper.csv", "text/csv",
+        )
+
 if not vista.empty:
     fila = vista.loc[iso]
     with perfil:
@@ -133,26 +176,6 @@ if not vista.empty:
         st.write("Ubicacions documentades", ", ".join(sorted(set(p.loc[p.iso.eq(iso), "ciutat"]) - {""})) or "Pendents")
         st.write("Per cotitzar cal confirmar la referència, l’origen, el codi duaner, el lloc d’entrega, la mida de comanda i la moneda.")
         st.link_button("Consultar Access2Markets", "https://trade.ec.europa.eu/access-to-markets/ca/home")
-    with clients:
-        st.subheader("Troba empreses semblants")
-        perfil_icp = st.selectbox("Perfil de referència", ["Tots", *comparables["referència"].unique()])
-        st.caption("Coincidències documentades per procés industrial o funció de distribució. La relació comercial i les compres es validen amb Texpaper.")
-        només = st.toggle("Només el mercat seleccionat", value=True)
-        filtrats = p[p.iso.eq(iso)] if només else p
-        coincidències = comparables if perfil_icp == "Tots" else comparables[comparables["referència"].eq(perfil_icp)]
-        if perfil_icp != "Tots":
-            filtrats = filtrats[filtrats.empresa.isin(coincidències.empresa)]
-        motius = coincidències.groupby("empresa").motiu.agg(" / ".join)
-        filtrats = filtrats.assign(comparabilitat=filtrats.empresa.map(motius).fillna(""))
-        taula = filtrats.assign(país=filtrats.iso.map(paisos.país)).drop(columns="iso")
-        st.dataframe(taula, hide_index=True, column_config={"font": st.column_config.LinkColumn("Font")})
-        st.download_button("Descarrega el CSV", taula.to_csv(index=False).encode("utf-8-sig"),
-                           "prospectes_texpaper.csv", "text/csv")
-        with st.expander("Evidència de les contraparts de referència"):
-            st.dataframe(contraparts, hide_index=True, column_config={
-                "font": st.column_config.LinkColumn("Font de l’enviament"),
-                "font_activitat": st.column_config.LinkColumn("Font de l’activitat"),
-            })
     with cas:
         tria = st.multiselect("Mercats per comparar", codis, default=[iso],
                               max_selections=4, format_func=vista.país.get, key=f"compara_{iso}")
